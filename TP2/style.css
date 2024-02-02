@@ -1,0 +1,142 @@
+body{
+    background: linear-gradient(to top,#6A11CB,#2575FC);
+    background-attachment: fixed;
+}
+header{
+    height: 100px;
+    border-radius: 10px;
+}
+#img1{
+    height: 100px;
+    width: 30%;
+    float: left;
+}
+h1{
+    float:left;
+}
+h1:hover{
+    transform:rotateX(360deg);
+    color:white;
+    transition-duration: 2s;
+}
+nav{
+    width: 30%;
+    height: 1000px;
+    float: left;   
+    background:linear-gradient(to left,#0ACFFE,#495AFF);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+}
+li{
+    margin-top: 30px;
+    font-size: 30px;
+    color: chartreuse;
+}
+a{
+    display:block;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: aquamarine;
+    font-style: none;
+    color: black;
+}
+main{
+    position: sticky;
+    top: 0px;
+    width: 70%;
+    float: left;
+    height: 1000px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#img2{
+    position: relative;
+    left: 30%;
+    opacity: 50%;
+}
+#img2:hover{
+    opacity: 100%;
+    box-shadow: 4px 4px 5px black;
+}
+
+#p1{
+    float: left;
+    overflow:scroll;
+    height: 100px;
+    width: 59%;
+    border: 1px solid black;
+    color: white;
+}
+
+#img3{
+    float: left;
+    width: 40%;
+    height: 100px;
+}
+#titre1{
+    display: block;
+}
+h2{
+    text-align: center;
+    color: rgb(0, 255, 55);
+}
+#img3:hover{
+    position: relative;
+    right: 30%;
+    transform: scale(2.5);
+    height:200px;
+}
+div{
+    border: 2px  solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+form{
+    border: 2px  solid black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color: aquamarine;
+}
+label{
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+input[type="reset"],[type="submit"]{
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top:5px ;
+}
+input{
+    border-radius: 12px;
+}
+#leg1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+legend{
+    color: rgb(255, 0, 119);
+}
+summary{
+    color: white;
+}
+footer{
+    color: aqua;
+}
