@@ -1,0 +1,122 @@
+body {
+    display: inline;
+
+}
+
+h1 {
+    font-size: 50px;
+    color: red;
+    text-shadow: 5px 0px 5px black;
+    text-align: center;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+ul {
+    font-size: 15px;
+    list-style: none;
+    background-color: aquamarine;
+    float: left;
+    height: 600px;
+}
+
+nav {
+    width: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+
+}
+
+a:hover {
+    color: white;
+}
+
+li:hover {
+    background-color: bisque;
+    text-decoration: none;
+
+}
+
+main {
+    float: left;
+    background-color: blanchedalmond;
+    height: 600px;
+    width: 60%;
+    border: solid 1px black;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    height: 600px;
+    background-color: blanchedalmond;
+    border: solid 1px black;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
+
+#dc {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+}
+
+#col {
+    background-color: orangered;
+}
+
+
+label {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type=submit],
+input[type=reset] {
+    margin-right: 50px;
+}
+
+legend {
+    font-size: 30px;
+    color: red;
+    font-weight: bolder;
+}
+
+cite {
+    display: block;
+}
+
+footer {
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    height: 50px;
+    left: 0;
+}
+
+form:not(fieldset) {
+    align-items: center;
+    text-align: center;
+}
