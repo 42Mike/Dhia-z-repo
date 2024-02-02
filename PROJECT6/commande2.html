@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="act2.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Commande de pizzas: </legend>
+            
+            <label for="">Type de pizza: </label>
+            <select id="typ">
+                <option value="0">Choisir une pizza:</option>
+                <option value="1">Fruits de mer</option>
+                <option value="1">Magherita</option>
+                <option value="1">Napolitaine</option>
+                <option value="1">Neptune</option>
+                <option value="1">Royale</option>
+            </select>
+
+            <label>Quanité: </label>
+            <input type="text" id="q"><br>
+
+            <label for="">Tel: </label>
+            <input type="text" id="t">
+
+            <label for="">Mot de passe: </label>
+            <input type="password" id="mp">
+
+            <input type="reset" value="Annuler">
+            <input type="button" value="Commander" onclick="return verif2()">
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

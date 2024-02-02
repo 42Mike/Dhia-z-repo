@@ -1,0 +1,49 @@
+label {
+    display: inline-block;
+    width: 300px;
+    font-size: 25px;
+}
+
+legend {
+    font-weight: bolder;
+    color: red;
+    font-size: 50px;
+}
+input{
+    margin-top: 15px;
+    border-radius: 10px;
+}
+body{
+    background: linear-gradient(to bottom,cyan,rgb(113, 68, 236),rgb(6, 238, 219));
+    background-attachment: fixed;
+}
+nav{
+    float: left;
+    width: 30%;
+}
+main{
+    float: left;
+    width: 70%;
+}
+iframe{
+    width: 100%;
+}
+a{
+   text-decoration: none;
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 50px;
+}
+li{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    list-style-type: lower-alpha;
+    
+}
+
+
+li:hover{
+    background: aquamarine;
+}

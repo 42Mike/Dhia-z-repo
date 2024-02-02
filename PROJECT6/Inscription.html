@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="act2.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Inscription d'un client: </legend>
+
+            <label for="">Nom: </label>
+            <input type="text" id="n"><br>
+
+            <label for="">Prénom: </label>
+            <input type="text" id="p"><br>
+
+            <label for="">Tel: </label>
+            <input type="tel" id="t"><br>
+
+            <label for="">Adresse: </label>
+            <textarea name="ad" id="a" cols="30" rows="2"></textarea><br>
+            <hr>
+            <label for="">Mot de passe: </label>
+            <input type="text" id="m"><br>
+
+            <label for="">Confirmation du mot de passe: </label>
+            <input type="text" id="c"> <br>
+
+            <input type="reset" value="Annuler">
+            <input type="button" value="Valider" onclick="return verif1()">
+
+        </fieldset>
+    </form>
+  
+</body>
+
+</html>
