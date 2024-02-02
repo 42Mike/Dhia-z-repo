@@ -1,0 +1,60 @@
+body{background:linear-gradient(to left, rgb(139,9,48),rgb(54,1,19));
+background-attachment: fixed;}
+
+#t1{text-align: center;
+color: rgb(101, 165, 42);
+font-size: 60px;
+}
+h4{text-align: center;
+font:  italic 30px   ;
+color: rgb(255, 153, 0);}
+
+ul{display: inline-block;
+    margin-right: 100px;
+    text-align: center;
+    list-style: none;}
+
+    ul:hover{background-color: aquamarine;
+    border-radius:15px ;}
+
+a{text-decoration:none;
+color: white;}
+
+a:hover{color: black;}
+
+section,#mai{background: linear-gradient(to right,greenyellow,cyan);
+width: 60%;
+float: left;
+border: 1px solid black;
+border-radius: 10px;
+text-indent: 50px;
+height: 300px;}
+hr{background-color: blue;
+height:10px;
+border-radius: 10px;}
+
+h1{color: red;
+    font-size: 25px;
+    text-align: center;
+text-shadow: 2px 2px 2px black;}
+
+table{border-collapse: collapse;}
+
+aside{float: right;
+width: 30%;
+background:linear-gradient(to right,greenyellow,cyan);
+border: 1px solid black;
+border-radius: 10px;
+height: 300px;}
+
+ol{color: rgb(167, 75, 10);}
+
+form{float: right;
+width: 50%;
+height: 500px;}
+
+#con{float: right;margin-bottom: 15px;}
+label{display: inline-block;
+font-size: 20px;
+width: 200px;
+font-weight: bolder;}
