@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="Acceuil.html" onsubmit="return test()">
+        <label for="">login</label>
+        <input type="text" id="ch"><br>
+
+        <label for="">mdp</label>
+        <input type="text" id="m"><br>
+
+        <input type="submit" value="connexion" >
+
+    </form>
+    <script>
+        function test(){
+            let ch=document.getElementById('ch');
+            let m=document.getElementById('m');
+
+            if(!alph(ch.value)||ch.length<3){alert("Invalid Credentials");return false;}
+
+            if(!alphanum(m.value)||m.length<6){alert('Invalid Password');return false;}
+
+            return true
+
+
+            
+        }
+        
+        function alph(x){
+                x=x.toUpperCase();
+                let i=0;
+                while(x[i]>="A" && x[i]<="Z" && i<x.length){i++;}
+                return(i==x.length)
+            }
+
+            function num(x){
+                let i=0;
+                while(x[i]<0 && x[i]>9 && i<x.length){i++}
+                return(i.length==x.length)
+            }
+            function alphanum(x){
+                x=x.toUpperCase()
+                
+                let i=0;
+                let j=0;
+
+                if(x[i]>="A" && x[i]<="Z" && i<x.length){i++}
+                else if (x[j]>="0" && x[j]<="9" && j<x.length){j++}
+                
+                return(i>j)
+            }
+            
+    </script>
+    <style>
+        body{background: linear-gradient(to top,cyan,lime);
+        background-attachment: fixed;}
+        label{display: inline-block;
+        width: 250px;
+        margin-top: 15px;}
+    </style>
+</body>
+</html>

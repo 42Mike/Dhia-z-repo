@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let d=new Date()
+        j=d.getDate()
+        if(j<10){
+            j="0"+j
+        }
+        m=d.getMonth()
+        if(m<10){
+            m="0"+m
+        }
+        document.write(j+"/"+m+"/"+d.getFullYear())
+
+        function activer(x){
+            document.getElementById(x).style.backgroundColor="yellow";
+        }
+
+        function init(x){
+            document.getElementById(x).style.backgroundColor="white";
+        }
+         
+        
+        function calc(){
+        x=Number(document.getElementById('x').value);
+        y=Number(document.getElementById('y').value);
+        alert(isNaN(x))
+
+        let k=Math.sqrt(Math.abs(Math.pow(x,2)-Math.pow(y,2)));
+        alert("le nombre est: "+k)
+    }
+
+
+    </script>
+    
+    <form action="">
+        <fieldset>
+            
+            <legend>Nombre Hasard</legend>
+            
+            <label for="">Valeur1</label>
+            <input type="text" id="x" onfocus="activer('x')" onblur="init('x')"><br>
+
+            <label for="">Valeur2</label>
+            <input type="text" id="y" onfocus="activer('y')" onblur="init('y')"><br>
+
+            <input type="button" value="jouer" onclick="calc()">
+
+
+        </fieldset>
+    </form>
+    
+    
+    <style>
+        body{background: linear-gradient(to top,cyan,lime);
+        background-attachment: fixed;}
+        label{display: inline-block;
+        width: 250px;
+        margin-top: 15px;}
+    </style>
+</body>
+</html>
