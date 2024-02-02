@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="return test()" action="acceuil.html">
+        <label for="">Login</label>
+        <input type="text" name="" id="l">
+
+        <label for="">mdp</label>
+        <input type="text" name="" id="m">
+
+        <input type="submit" value="connexion">
+    </form>
+    <script>
+
+        function alph(x) {
+            x = x.toUpperCase();
+
+            i = 0;
+            while (x.charAt(i) >= "A" && x.charAt(i) <= "Z" && i < x.length) { i++ }
+
+            return i == x.length
+        }
+
+        function ver(x) {
+            c = 0
+            l = 0
+            for (i = 0; i < x.length; i++) {
+                if (isNaN(x.charAt(i))) {
+                    l++
+                }
+                else { c++ }
+
+
+            }
+            return (l > c)
+        }
+
+        function test() {
+            l = document.getElementById('l').value
+            m = document.getElementById('m').value
+
+            if (!alph(l) || l.length < 3) {
+                alert('login invalide');
+                return false;
+            }
+
+            if (m.length < 6 || !ver(m)) {
+                alert('mdp invaldie');
+                return false;
+            }
+            return true
+        }
+    </script>
+</body>
+
+</html>
